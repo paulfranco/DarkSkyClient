@@ -9,18 +9,15 @@ public class Currently {
     @SerializedName("time")
     @Expose
     private Integer time;
-
     @SerializedName("summary")
     @Expose
     private String summary;
-
     @SerializedName("icon")
     @Expose
     private String icon;
-
     @SerializedName("temperature")
     @Expose
-    private Integer temperature;
+    private Double temperature;
 
     public Integer getTime() {
         return time;
@@ -46,14 +43,12 @@ public class Currently {
         this.icon = icon;
     }
 
-    public Integer getTemperature() {
+    public Double getTemperature() {
         return temperature;
     }
 
-    public void setTemperature(Integer temperature) {
+    public void setTemperature(Double temperature) {
         this.temperature = temperature;
     }
-
-
 
 }
