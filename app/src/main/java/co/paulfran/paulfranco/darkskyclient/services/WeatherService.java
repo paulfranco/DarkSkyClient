@@ -7,7 +7,7 @@ import retrofit2.http.Path;
 
 public interface WeatherService {
 
-    @GET("{lat}, {lng}")
+    @GET("{lat},{lng}")
     Call<Weather> getWeather(@Path("lat") double lat, @Path("lng") double lng);
 
 }
